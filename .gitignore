@@ -1,0 +1,43 @@
+# -------------------------------
+# 🧠 Python
+# -------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.log
+
+# -------------------------------
+# 📓 Jupyter & Notebooks
+# -------------------------------
+.ipynb_checkpoints/
+.notebooks/
+jupyter_cache/
+*.nbconvert.ipynb
+
+# -------------------------------
+# 📦 Virtual Environments
+# -------------------------------
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+.python-version
+
+# -------------------------------
+# ⚙️ Config / Secrets / Credentials
+# -------------------------------
+*.env
+.env.*
+config.json
+secrets.json
+*.key
+*.pem
+
