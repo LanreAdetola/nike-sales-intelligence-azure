@@ -147,10 +147,61 @@ Provisioned `nikesalesstorage` as a **Data Lake Storage Gen2** for raw and clean
 📸 *Screenshot:*  
 ![Storage Creation](docs/screenshots/storage_creation.png)
 
-#### ✅ Step 3: Create Azure Data Factory
+
+#### ✅ Step 3: Create Medallion Architecture
+Set up `nikesalesstorage` (V2) for stages in transformation.
+
+📸 *Screenshot:*  
+![ADF Creation](docs/screenshots/medallion.png)
+
+
+#### ✅ Step 4: Create Azure Data Factory
 Set up `nike-sales-adf` (V2) for ingestion pipelines.
 
 📸 *Screenshot:*  
 ![ADF Creation](docs/screenshots/adf_creation.png)
 
 > 🧠 *Goal:* Demonstrate manual setup before introducing Infrastructure as Code (IaC) and CI/CD pipelines in Phase 2.
+
+#### ✅ Step 5: Create a pipeline
+Set up link services for Github & to Gen 2 Data Storage - bronze
+
+
+📸 *Screenshot:*  
+![Pipeline Success](docs/screenshots/linkservice.png)
+
+
+📸 *Screenshot:*  
+![Pipeline Success](docs/screenshots/linkservice2.png)
+
+
+
+Phase 1 – Raw Data Ingestion
+
+   [GitHub]
+     │
+     ▼
+ ┌───────────────┐
+ │ Azure Data    │
+ │ Factory (ADF) │
+ │ Pipeline:     │
+ │ GitToRaw      │
+ └───────────────┘
+     │
+     ▼
+ ┌───────────────┐
+ │ Azure Data    │
+ │ Lake Storage  │
+ │ Gen2 - Bronze │
+ │ (Raw Data)    │
+ └───────────────┘
+
+
+#### ✅ Step 6: Debug & Validate
+Run Copy data activitiy from Github to Gen 2 Data Storage - bronze
+
+📸 *Screenshot:*  
+![Pipeline Success](docs/screenshots/copydata.png)
+
+📸 *Screenshot:*  
+![Pipeline Success](docs/screenshots/copydata2.png)
