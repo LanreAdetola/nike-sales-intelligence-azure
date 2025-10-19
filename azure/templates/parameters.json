@@ -1,0 +1,56 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscription": {
+            "value": "3359f2ac-f062-4fe9-9ebb-d0055129307d"
+        },
+        "resourceGroup": {
+            "value": "nike-sales-rg"
+        },
+        "name": {
+            "value": "nike-sales-adf"
+        },
+        "version": {
+            "value": "V2"
+        },
+        "location": {
+            "value": "uksouth"
+        },
+        "vNetEnabled": {
+            "value": false
+        },
+        "publicNetworkAccess": {
+            "value": true
+        },
+        "privateEndpoints": {
+            "value": []
+        },
+        "gitConfigureLater": {
+            "value": true
+        },
+        "tagsByResource": {
+            "value": {
+                "Microsoft.DataFactory/factories": {
+                    "Student Project": "Data engineering",
+                    "StudentProject": "Nike"
+                }
+            }
+        },
+        "userAssignedIdentitiesStr": {
+            "value": "{\"type\": \"SystemAssigned,UserAssigned\", \"userAssignedIdentities\": {\"\": {}"
+        },
+        "vaultBaseUrl": {
+            "value": ""
+        },
+        "keyName": {
+            "value": ""
+        },
+        "keyVersion": {
+            "value": ""
+        },
+        "enableCMK": {
+            "value": false
+        }
+    }
+}

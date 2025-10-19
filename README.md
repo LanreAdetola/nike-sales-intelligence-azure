@@ -5,6 +5,9 @@
 [![Azure](https://img.shields.io/badge/azure-cloud-blueviolet.svg)](https://azure.microsoft.com/)
 [![Power BI](https://img.shields.io/badge/power--bi-report-yellowgreen.svg)](https://powerbi.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
+[![Build in Public](https://img.shields.io/badge/build--in--public-active-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-Phase%201-blue.svg)]()
+
 
 ## 📊 From Raw Data to Smart Decisions
 
@@ -121,16 +124,6 @@ jupyter notebook
 
 > ⚠️ **Note:** Some notebooks require access to Azure services (Data Lake, Databricks, SQL). You can mock data in `data/sample/` for local testing.
 
----
-
-### 📅 Timeline
-| Week | Activities |
-|------|------------|
-| 1    | Load raw dataset to Azure, assess quality, define cleaning strategy |
-| 2    | Perform full cleaning in Databricks; document results |
-| 3    | Conduct EDA and implement ML models |
-| 4    | Build Power BI dashboard; connect to Azure SQL/Synapse |
-| 5    | Final report, GitHub publishing, demo video |
 
 ---
 
@@ -138,3 +131,26 @@ jupyter notebook
 - Insights on top products, regions, and discount strategies
 - ML-driven profit predictions and segmentation
 - Strategic recommendations for Nike’s sales and supply chain teams
+
+
+---
+
+### 🏗️ Build Log (Phase 1 – Manual Setup)
+
+
+#### ✅ Step 1: Create Storage Account
+Provisioned `nike-sales-rg` as a **Resource Group** for assets.
+
+#### ✅ Step 2: Create Storage Account
+Provisioned `nikesalesstorage` as a **Data Lake Storage Gen2** for raw and cleaned data.
+
+📸 *Screenshot:*  
+![Storage Creation](docs/screenshots/storage_creation.png)
+
+#### ✅ Step 3: Create Azure Data Factory
+Set up `nike-sales-adf` (V2) for ingestion pipelines.
+
+📸 *Screenshot:*  
+![ADF Creation](docs/screenshots/adf_creation.png)
+
+> 🧠 *Goal:* Demonstrate manual setup before introducing Infrastructure as Code (IaC) and CI/CD pipelines in Phase 2.
