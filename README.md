@@ -205,3 +205,16 @@ Run Copy data activitiy from Github to Gen 2 Data Storage - bronze
 
 📸 *Screenshot:*  
 ![Pipeline Success](docs/screenshots/copydata2.png)
+
+
+### 🧭 Roadmap
+
+| Phase | Focus | Status |
+|-------|-------|--------|
+| **0** | Setup | ![Done](https://img.shields.io/badge/Done-brightgreen) |
+| **1** | Manual Azure Setup | ![Done](https://img.shields.io/badge/Done-brightgreen) |
+| **2** | Data Pipeline | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| **3** | ML & Power BI | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| **4** | IaC & CI/CD | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+
+Phase 1 Complete
